@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #3C3C3C;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+footer {
+    background-color: #676767;
+    height: 150px;
+    color: #E7DAC9;
+}
+
+footer p {
+    position: relative;
+    top: 25px;
+    right: 30px;
+    float: right;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+header, .wrapper p {
+    text-align: center;
+}
+
+header {
+   padding-top: 3rem;
+}
+
+header h1 {
+    font-size: 2.4rem;
+
+    animation: titre-animation 3s forwards;
+}
+
+.wrapper p {
+    font-size: 1.2rem;
+}
+
+#images-wrapper {
+    margin: 3rem auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#images-wrapper img {
+    width: 200px;
+    height: 150px;
+    border: 2px solid #3C3C3C;
+}
+
+#links-wrapper {
+    display: flex;
+    width:60%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 5rem auto;
+}
+
+#links-wrapper a {
+    color: #3C3C3C;
+    text-decoration: none;
+
+    opacity: 0;
+    animation: link-animation 1s ease-in forwards;
+}
+
+#simplon-logo {
+    position: relative;
+
+    animation: simplon-logo-animation 1s ease-out forwards;
+}
+
+#presentation-image {
+    position: relative;
+
+    animation: presentation-animation 1s ease-out forwards;
+}
+
+@keyframes simplon-logo-animation {
+    0% {
+        left: -200px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+
+@keyframes presentation-animation {
+    0% {
+        right: -200px;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes titre-animation {
+    0% {
+        letter-spacing: 60px;
+    }
+
+    100% {
+        letter-spacing: 1px;
+    }
+}
+
+@keyframes link-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
